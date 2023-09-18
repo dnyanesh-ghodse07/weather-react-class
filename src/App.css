@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  min-width: 400px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border: 0.5px solid #eee;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: url("https://img.freepik.com/free-vector/scene-with-rainfall-field_1308-73940.jpg?size=626&ext=jpg&ga=GA1.2.1045073079.1691851696&semt=ais");
+}
+
+.input-location {
+  padding: 10px 10px;
+  font-size: 20px;
+  color: lightslategray;
+  border: 0.3px solid #b5b5b5;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.weather {
+  width: 100%;
+}
+
+.weather-list {
+  list-style-type: none;
+  max-height: 400px;
+  overflow-x: scroll;
+}
+.weather-list::-webkit-scrollbar {
+  display: none;
+}
+
+.day {
+  width: 100%;
+  border: 0.3px solid #d8d8d8;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: azure;
+  background: rgba(0, 0, 0, 0.2);
+}
+.day:hover {
+  background-color: rgb(209, 241, 252);
+  cursor: pointer;
+  color: black;
+}
+
+.day p {
+  font-size: 20px;
+}
+
+.day span {
+  font-size: 50px;
+}
+
+.weather .location-name {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
